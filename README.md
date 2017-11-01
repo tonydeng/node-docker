@@ -19,7 +19,14 @@ docker pull wolfdeng/node
 docker run --name node -it -d wolfdeng/node
 ```
 
-### 使用容器内容的jdk
+### 使用容器内的命令
 ```bash
-docker exec -it node node -version
+➜  ~ docker exec -ti node node -v
+v8.8.1
+
+➜  ~ docker exec -ti node npm -v
+5.4.2
+
+➜  ~ docker exec -ti node yarn -v
+1.2.1
 ```
