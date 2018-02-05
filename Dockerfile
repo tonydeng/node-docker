@@ -1,6 +1,6 @@
-FROM wolfdeng/alpine:3.6
+FROM wolfdeng/alpine:3.7
 
-ENV NODE_VERSION 8.8.1
+ENV NODE_VERSION 8.9.4
 
 RUN addgroup -g 1000 node \
     && adduser -u 1000 -G node -s /bin/sh -D node \
